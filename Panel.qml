@@ -508,8 +508,8 @@ Item {
     visible: root.opened
     anchors { right: true; bottom: true }
     margins { right: Style.space(12); bottom: Style.space(12) }
-    width: root.cardWidth
-    height: Math.max(220, contentColumn.implicitHeight + card.contentTopInset + card.contentBottomInset)
+    implicitWidth: root.cardWidth
+    implicitHeight: Math.max(220, contentColumn.implicitHeight + card.contentTopInset + card.contentBottomInset)
     color: "transparent"
     exclusionMode: ExclusionMode.Ignore
     WlrLayershell.namespace: "opensense-widget"
