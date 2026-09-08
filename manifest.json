@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "opensense-widget",
+  "name": "OPNsense Widget",
+  "version": "0.1.0",
+  "author": "Iain Lennox",
+  "description": "Floating OPNsense firewall interface monitor with bandwidth graphs, server pings and service checks",
+  "kinds": ["panel", "bar-widget"],
+  "keepLoaded": true,
+  "entryPoints": {
+    "panel": "Panel.qml",
+    "barWidget": "BarWidget.qml"
+  },
+  "panel": {
+    "displayName": "OPNsense Widget",
+    "description": "Floating OPNsense interface monitor",
+    "defaults": {
+      "refreshInterval": 5000,
+      "blurIpAddress": false
+    }
+  },
+  "barWidget": {
+    "displayName": "OPNsense Widget",
+    "description": "OPNsense interface status",
+    "category": "Network",
+    "allowMultiple": false
+  }
+}
